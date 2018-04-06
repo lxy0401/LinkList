@@ -119,5 +119,12 @@ LinkNode* LinkListCrossWithCirclePos(LinkNode* head1,LinkNode* head2);
 //16.找两个已排序链表对相同部分
 LinkNode* LinkListUnionSet(LinkNode* head1,LinkNode* head2);
 
+typedef struct ComplexNode
+{
+    LinkNodeType data;
+    struct ComplexNode* next;
+    struct ComplexNode* random;
+}ComplexNode;
+
 //17.复杂链表拷贝
-//ComplexNode* CopyComplexList(ComplexNode* head);
+ComplexNode* CopyComplexList(ComplexNode* head);
